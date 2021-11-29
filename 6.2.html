@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>tugas pemrograman web</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: row;
+            margin: 0;
+        }
+        #main {
+            display: flex;
+            flex: 1;
+        }
+        #main>nav {
+            flex: 1;
+            background-color: rgb(95, 3, 3);
+            width: 100px;
+            height: 525px;
+        }
+        header,footer{
+            background: yellow;
+            height: 10vh;
+        }
+        #dua {
+            display: flex;
+            flex-direction: column;
+            flex: 5;
+        }
+        #satu {
+            flex-direction: row;
+            display: flex;
+        }
+        #satu>article {
+            min-height: 60vh;
+            background-color: rgb(6, 116, 15);
+            flex: 3;
+        }
+        #satu > aside {
+            background-color: rgb(14, 0, 136);
+            width: 200px;
+            flex: 1;
+        }
+        nav, header,footer,article,aside {
+            padding: 1em;
+        }
+    </style>
+    </head>
+    <body>
+        <div id="main">
+            <nav>Nav</nav>
+                <div id="dua">
+                    <header>Header</header>
+                    <div id="satu">
+                        <article>Article</article>
+                        <aside>Aside</aside>
+                    </div>
+                    <footer>Footer</footer>
+                </div>
+        </div>
+    </body>
+</html>
